@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.h.myapplication.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.example.h.myapplication.widget.CustomCircleProgressBar
+                    android:id="@+id/am_progressbar_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:direction="left"
+                    app:max_progress="100"
+                    app:outside_color="@color/colorPrimary"
+                    app:outside_radius="40dp"
+                    app:progress="0"
+                    app:progress_width="4dp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="当前手机电量" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.example.h.myapplication.widget.CustomCircleProgressBar
+                    android:id="@+id/am_progressbar_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:direction="left"
+                    app:max_progress="100"
+                    app:outside_color="@color/colorPrimary"
+                    app:outside_radius="40dp"
+                    app:progress="0"
+                    app:progress_width="4dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="当前节电应用占比" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="管理所有应用"
+        android:layout_margin="25dp"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/bg_btn1"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="管理正常模式应用"
+        android:layout_margin="25dp"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/bg_btn1"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="管理节电模式应用"
+        android:layout_margin="25dp"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/bg_btn1"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="开发小组成员"
+        android:textSize="25sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="韩玮     顾霄鹏     费俊涛     许晓鹏"
+                android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>
